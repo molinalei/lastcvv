@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+
+}
+.about{
+    width:100%;
+    padding:100px 0px;
+    background-color: #191919;
+}
+.carrousel-item img{
+    height: auto;
+    width: 430px;
+}
+
+.about-text{
+    width:550px;
+}
+span{
+    color:blueviolet;
+}
+h2{
+    color:blueviolet;
+    justify-content: center;
+    font-size: 2rem;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.about-text h2 {
+    color:white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color:white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom:25px;
+    text-transform:capitalize;
+}
+.about-text p{
+    color:#fcfc;
+    letter-spacing:1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding:13px 30px;
+    border-radius:30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+
+
+}
+.footer {
+    min-height: 500px;
+    background-color: #191919;
+}
+
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family:'Bowlby One', cursive ;
+
+}
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border:  2px solid white;
+    border-radius:50%;
+    transition: all 0.2s ease-in;
+
+}
+.iconos-redes-sociales i {
+    color:rgb(151, 27, 141);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border:2px solid  rgb(151, 27, 141);
+}
+.iconos-redes-sociales a:hover i {
+   color:black; 
+
+}
+.derechos-de-autor {
+    font-size: 15px;
+    color:#aeaeae;
+    padding:20px;
+
+}
+.seccion-oscura{
+    background-color: #191919;
+}
+@media screen and (max-width:767px){
+    .about-text h2 {
+        font-size: 3rem;
+    }
+}

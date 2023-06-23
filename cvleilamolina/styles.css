@@ -1,0 +1,324 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Titillium+Web:wght@200;300;400;600&family=Yellowtail&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1,1,1,0.7);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:#ffff;
+    font-weight: 700;
+}
+.navigation ul {
+    list-style: none;
+}
+.header .navigation ul li{
+    float: left;
+    position: relative;
+}
+.header .navigation ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+   
+}
+.header .navigation ul li a:hover{
+    background-color:blueviolet;
+}
+.header .navigation ul li ul{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1,1,1,0.7);
+    display: none;
+}
+.header .navigation ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.header .navigation ul li ul li ul {
+    position: absolute;
+    top:0;
+    right: 300px;
+}
+.header .navigation ul li ul li{
+    width: 100%;
+}
+.header .navigation ul li:hover >ul{
+    display: initial;
+
+}
+#toggle,
+.header label{
+    display: none;
+    cursor:pointer;
+}
+
+@media(max-width:950px) {
+    .header label{
+        display:initial;
+    }
+
+    .header{
+        padding: 20px 10%;
+    }
+    .header .navigation {
+        position: absolute;
+        top:100%;
+        left:0;
+        right: 0;
+        background-color: rgba(1,1,1,0.7);
+        display: none;
+    }
+
+    .header .navigation ul li {
+        width: 100%;
+    }
+    .header .navigation ul li a{
+        padding: 8px 30px 8px 10%;
+
+    }
+
+    .header .navigation ul li ul{
+        position: relative;
+        width: 100%;
+        left:0;
+    }
+    .header .navigation ul li ul li{
+        background-color: rgba(1,1,1,0.7);
+    }
+    .header .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+        
+    }
+    #toggle:checked~ .navigation{
+        display: block;
+    } 
+    
+}
+
+.hero{
+    min-height: 100vh;
+    background-image:url(imagenes/img2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span{
+    color:blueviolet;
+}
+.menu{
+    position:fixed;
+    max-width: 700px;
+    width: 100%;
+    padding:60px 20px;
+    margin:0 auto;
+    margin-top: 15px;
+    justify-content: center;
+    list-style-type:none;
+ }
+.menu h1{
+    color:white;
+    
+   
+    
+}
+.menu h3{
+    color:white;
+   
+}
+.menu h4{
+    color:#fcfc;
+    letter-spacing: 2px;
+    font-size: 1rem;
+   
+    
+    
+}
+.menu h2{
+    color:white;
+    text-shadow: wheat;
+   
+}
+.newslatter form {
+    width: 380px;
+    max-width: 50%;
+    display: flex;
+    position: relative;
+   
+}
+.newslatter form input:first-child {
+    display:inline-block;
+    width:100%;
+    padding:14px 130px 14px 15px;
+    border: 2px solid blueviolet;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display:inline-block;
+    outline: none;
+    border:none;
+    padding:10px 30px;
+    border-radius:30px;
+    background-color: blueviolet;
+    color:white;
+    box-shadow: 0px 0px 5px #000 ,0px 0px 15px #858585;
+    top:6px;
+    right: 6px;
+}
+.menu .image{
+    color:blueviolet
+}
+i{
+    color:blueviolet;
+    font-size: 2rem;
+}
+@media screen and (max-width:767px){
+       .menu{
+        font-size: 20px;
+        position: flex;
+        max-width: 700px;
+        width: 100%;
+        padding:80px 20px;
+        margin:0 auto;
+        margin-top: 15px;
+        justify-content: center;
+        list-style-type:none;
+       }
+       h4{
+        font-size: 20px;
+        justify-content: center;
+        
+       }
+       
+       .newslatter{
+        font-size: 20px;
+        justify-content: center;
+        display: flex;
+       
+       }
+       h1{
+        font-size: 20px;
+            justify-content: center;
+           
+           
+       }
+       h3{
+        font-size: 12px;
+            justify-content: center;
+           
+            
+       }
+   
+}
+.container-fluid {
+    position: relative;
+    justify-content: center;
+}
+.footer {
+    min-height: 500px;
+    background-color: #191919;
+    position: fixed;
+}
+
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family:'Bowlby One', cursive ;
+
+}
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border:  2px solid white;
+    border-radius:50%;
+    transition: all 0.2s ease-in;
+
+}
+.iconos-redes-sociales i {
+    color:rgb(151, 27, 141);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border:2px solid  rgb(151, 27, 141);
+}
+.iconos-redes-sociales a:hover i {
+   color:black; 
+
+}
+.derechos-de-autor {
+    font-size: 15px;
+    color:#aeaeae;
+    padding:20px;
+
+}
+.seccion-oscura{
+    background-color:#191919;
+}
+.card-body{
+    color:#191919;
+    background-color: #191919;
+}
+.card-text{
+    color:#fcfc;
+    justify-content: center;
+    font-size: 0.5rem;
+}
+p{
+    color:#fcfc;
+    justify-content:flex-start;
+    font-size: 1rem;
+    background-position: center;
+
+}
+h4 p{
+    color:#fcfc;
+    font-size: 1.5rem;
+}
+h1 p{
+    color:white;
+    font-size: 3rem;
+}
+h3 p{
+    color:white;
+    font-size: 1.7rem
+}
